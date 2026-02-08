@@ -1,0 +1,19 @@
+# Workaround: maxtouch-zephyr-module's peacock_vik_module shield defines
+# these symbols without types, causing Kconfig warnings that are fatal in
+# Zephyr 4.1+ (KCONFIG_WARNINGS_AS_ERRORS). Provide type definitions here.
+
+config ZMK_TRACKPAD_LOGICAL_X
+	int "Trackpad logical X resolution"
+	default 0
+
+config ZMK_TRACKPAD_LOGICAL_Y
+	int "Trackpad logical Y resolution"
+	default 0
+
+config ZMK_TRACKPAD_PHYSICAL_X
+	int "Trackpad physical X dimension"
+	default 0
+
+config ZMK_TRACKPAD_PHYSICAL_Y
+	int "Trackpad physical Y dimension"
+	default 0
