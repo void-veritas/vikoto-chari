@@ -3,19 +3,19 @@ include:
   # Non-dongle: right = central
   - board: vikoto
     shield: chari_right
-  - board: nice_nano_v2
+  - board: nice_nano
     shield: chari_left
 
   # Dongle: Prospector = central
   - board: xiao_ble
     shield: chari_dongle prospector_adapter
-  - board: nice_nano_v2
+  - board: nice_nano
     shield: chari_dongle_left
   - board: vikoto
     shield: chari_dongle_right
 
   # Settings reset
-  - board: nice_nano_v2
+  - board: nice_nano
     shield: settings_reset
   - board: vikoto
     shield: settings_reset
