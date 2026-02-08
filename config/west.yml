@@ -1,0 +1,32 @@
+manifest:
+  remotes:
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
+    - name: sadekbaroudi
+      url-base: https://github.com/sadekbaroudi
+    - name: george-norton
+      url-base: https://github.com/george-norton
+    - name: carrefinho
+      url-base: https://github.com/carrefinho
+
+  projects:
+    - name: zmk
+      remote: zmkfirmware
+      revision: main
+      import: app/west.yml
+
+    - name: zmk-fingerpunch-controllers
+      remote: sadekbaroudi
+      revision: main
+      import: config/deps.yml
+
+    - name: maxtouch-zephyr-module
+      remote: george-norton
+      revision: main
+
+    - name: prospector-zmk-module
+      remote: carrefinho
+      revision: core/zephyr-4-1
+
+  self:
+    path: config

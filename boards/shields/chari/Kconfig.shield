@@ -1,0 +1,14 @@
+config SHIELD_CHARI_LEFT
+	def_bool $(shields_list_contains,chari_left)
+
+config SHIELD_CHARI_RIGHT
+	def_bool $(shields_list_contains,chari_right)
+
+config SHIELD_CHARI_DONGLE
+	def_bool $(shields_list_contains,chari_dongle)
+
+config SHIELD_CHARI_DONGLE_LEFT
+	def_bool $(shields_list_contains,chari_dongle_left)
+
+config SHIELD_CHARI_DONGLE_RIGHT
+	def_bool $(shields_list_contains,chari_dongle_right)

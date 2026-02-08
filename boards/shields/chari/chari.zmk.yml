@@ -1,0 +1,15 @@
+file_format: "1"
+id: chari
+name: Chari
+type: shield
+url: https://github.com/void-veritas/vikoto-chari
+requires: [pro_micro]
+features:
+  - keys
+  - pointer
+siblings:
+  - chari_left
+  - chari_right
+  - chari_dongle
+  - chari_dongle_left
+  - chari_dongle_right

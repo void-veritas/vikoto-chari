@@ -1,0 +1,26 @@
+if SHIELD_CHARI_RIGHT
+
+config ZMK_KEYBOARD_NAME
+	default "Chari"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+	default y
+
+endif
+
+if SHIELD_CHARI_DONGLE
+
+config ZMK_KEYBOARD_NAME
+	default "Chari"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+	default y
+
+endif
+
+if SHIELD_CHARI_LEFT || SHIELD_CHARI_RIGHT || SHIELD_CHARI_DONGLE || SHIELD_CHARI_DONGLE_LEFT || SHIELD_CHARI_DONGLE_RIGHT
+
+config ZMK_SPLIT
+	default y
+
+endif
