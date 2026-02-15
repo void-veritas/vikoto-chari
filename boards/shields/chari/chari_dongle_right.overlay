@@ -49,8 +49,13 @@
 		compatible = "microchip,maxtouch";
 		reg = <0x4a>;
 		chg-gpios = <&vik_conn 3 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-		sensor-width = <35>;
-		sensor-height = <42>;
+		sensor-width = <42>;
+		sensor-height = <50>;
+		touch_threshold = <20>;
+		gain = <10>;
+		touch_hysteresis = <10>;
+		internal_touch_threshold = <10>;
+		internal_touch_hysteresis = <5>;
 	};
 };
 
