@@ -4,6 +4,8 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: george-norton
       url-base: https://github.com/george-norton
+    - name: void-veritas
+      url-base: https://github.com/void-veritas
     - name: carrefinho
       url-base: https://github.com/carrefinho
 
@@ -14,7 +16,7 @@ manifest:
       import: app/west.yml
 
     - name: maxtouch-zephyr-module
-      remote: george-norton
+      remote: void-veritas  # DEBUG: forked from george-norton with diagnostic logging
       revision: main
 
     - name: prospector-zmk-module
