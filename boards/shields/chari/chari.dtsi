@@ -173,5 +173,6 @@
         compatible = "zmk,input-listener";
         status = "disabled";
         device = <&trackpad_split>;
+        mode = "trackpad";
     };
 };
